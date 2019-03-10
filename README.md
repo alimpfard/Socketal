@@ -28,7 +28,7 @@ all specs span a line and start with a single octothorp (`#`) followed by the pr
 this entry, if specified will set a node ident to be equal to another
 
 example: `#alias 4 192.168.1.16/4`
-will cause the entire subrange specified to be the same as ident 8
+will cause the entire subrange specified to be the same as ident 4
 
 + `subnet [subnet range]`
 
