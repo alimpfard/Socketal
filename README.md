@@ -23,7 +23,14 @@ all specs span a line and start with a single octothorp (`#`) followed by the pr
 
 ### Meta specifications
 
-+ subnet [subnet range]:
++ `alias [ident] [range|ident]`
+
+this entry, if specified will set a node ident to be equal to another
+
+example: `#alias 4 192.168.1.16/4`
+will cause the entire subrange specified to be the same as ident 8
+
++ `subnet [subnet range]`
 
 this entry, if specified, will translate node identifiers to IP addresses in the valid range
 
