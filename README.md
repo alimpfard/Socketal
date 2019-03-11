@@ -37,7 +37,7 @@ this entry, if specified, will translate node identifiers to IP addresses in the
 example: 
 `#subnet 192.168.0.0/24` will cause the node ident `3` to have an IP address of `192.168.0.3`, and ident `259` to have an IP address of `192.168.1.4`
 
-+ label [label file]
++ `label [label file]`
 
 This entry, if specified, will read pairs of [ident, IP] from the given file.
 
@@ -51,7 +51,7 @@ TODO
 
 ### Architecture / Topology
 This entry is mandatory, and a single file may only contain one.
-+ model [model spec]
++ `model [model spec]`
 
 Specifies the topology of the described network, see below for details
 
@@ -127,7 +127,7 @@ socket <3,2> x: String = "[" + x + "]"
 socket <2,3> x: String = "Hello, " + x
 socket <3,4> x: Unit   = Print# x
 
-node 1 dispatches receive to node 1
+node 1 dispatches receive to node 2
 node 2 dispatches receive to node 3
 node 3 dispatches reveive from node 2 to node 4
 
